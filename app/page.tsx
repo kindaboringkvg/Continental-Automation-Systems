@@ -10,13 +10,15 @@ export default function HomePage() {
       <div className="relative min-h-screen">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/placeholder.svg?height=1080&width=1920"
-            alt="Industrial Automation Background"
-            fill
-            className="object-cover"
-            priority
-          />
+          <video
+            src="/1.mp4" // your video file path
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="object-cover w-full h-full"
+          ></video>
+
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
         </div>
@@ -24,49 +26,40 @@ export default function HomePage() {
         {/* Hero Content */}
         <div className="relative z-10 flex items-center min-h-screen">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="max-w-4xl">
+            <div className="text-center max-w-5xl mx-auto">
               {/* Company Logo/Icon */}
-              <div className="mb-8 animate-fade-in">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-8 rounded-2xl shadow-2xl mb-6">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
+              <div className="mb-4 animate-fade-in">
+                <div className="inline-flex items-center justify-center w-75 h-75 rounded-2xl mb-4 overflow-hidden">
+                  <img 
+                    src="/logo.png" 
+                    alt="Continental Automation Systems Logo" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
 
               {/* Company Name */}
               <div className="mb-8 animate-slide-up">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
-                  Continental
-                  <span className="block text-orange-7 text-4xl sm:text-5xl lg:text-6xl mt-2">Automation Systems</span>
+                  Continental Automation
+                  <span className="block text-orange-7 text-4xl sm:text-5xl lg:text-6xl mt-2">Systems</span>
                 </h1>
                 <p className="text-xl sm:text-2xl text-gray-300 font-light">Pvt. Ltd.</p>
               </div>
 
               {/* Tagline */}
               <div className="mb-12 animate-fade-in-delay">
-                <p className="text-xl sm:text-2xl text-gray-200 max-w-3xl leading-relaxed">
+                <p className="text-xl sm:text-2xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
                   Pioneering the future of industrial automation with cutting-edge technology and innovative solutions
                   that transform manufacturing processes worldwide.
                 </p>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-delay">
+              <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-delay justify-center">
                 <Button
                   size="lg"
-                  className="bg-orange-8 hover:bg-orange-9 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-orange-8/25 transition-all duration-300 hover:scale-105 group"
+                  className="bg-orange-9 hover:bg-orange-9 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-orange-8/25 transition-all duration-300 hover:scale-105 group"
                 >
                   Explore Our Solutions
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -82,7 +75,7 @@ export default function HomePage() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 animate-fade-in-delay-2">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 animate-fade-in-delay-2 max-w-4xl mx-auto">
                 {[
                   { number: "500+", label: "Projects Completed" },
                   { number: "50+", label: "Countries Served" },
@@ -96,13 +89,6 @@ export default function HomePage() {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>
