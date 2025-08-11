@@ -31,13 +31,13 @@ export default function ProductsPage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-orange-1 to-orange-2">
       <div className="pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">Our Products & Solutions</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-12 mb-6">Our Products & Solutions</h1>
+            <p className="text-xl text-gray-11 max-w-3xl mx-auto">
               Comprehensive automation solutions designed to optimize your industrial processes and drive operational
               excellence.
             </p>
@@ -49,25 +49,25 @@ export default function ProductsPage() {
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-blue-100 rounded-lg group-hover:bg-blue-600 transition-colors duration-300">
-                      <product.icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                    <div className="p-3 bg-orange-3 rounded-lg group-hover:bg-orange-8 transition-colors duration-300">
+                      <product.icon className="h-8 w-8 text-orange-8 group-hover:text-white transition-colors duration-300" />
                     </div>
-                    <CardTitle className="text-2xl text-gray-900">{product.title}</CardTitle>
+                    <CardTitle className="text-2xl text-gray-12">{product.title}</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>
+                  <p className="text-gray-11 mb-6 leading-relaxed">{product.description}</p>
                   <div className="space-y-2 mb-6">
                     {product.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                        <span className="text-gray-700">{feature}</span>
+                        <div className="w-2 h-2 bg-orange-8 rounded-full"></div>
+                        <span className="text-gray-11">{feature}</span>
                       </div>
                     ))}
                   </div>
                   <Button
                     variant="outline"
-                    className="group/btn hover:bg-blue-600 hover:text-white transition-all duration-300 bg-transparent"
+                    className="group/btn hover:bg-orange-8 hover:text-white transition-all duration-300 bg-transparent"
                   >
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
@@ -78,23 +78,23 @@ export default function ProductsPage() {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 lg:p-12 text-center text-white">
+          <div className="bg-gradient-to-r from-orange-8 to-orange-9 rounded-2xl p-8 lg:p-12 text-center text-white">
             <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Operations?</h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-orange-2 mb-8 max-w-2xl mx-auto">
               Let our experts help you choose the right automation solution for your specific needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
                 variant="secondary"
-                className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
+                className="bg-white text-orange-8 hover:bg-gray-100 px-8 py-4 text-lg font-semibold"
               >
                 Request Consultation
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-orange-8 px-8 py-4 text-lg font-semibold bg-transparent"
               >
                 Download Brochure
               </Button>

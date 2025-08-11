@@ -3,13 +3,13 @@ import { Users, Target, Award, Globe } from "lucide-react"
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-orange-1 to-orange-2">
       <div className="pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">About Continental Automation Systems</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-12 mb-6">About Continental Automation Systems</h1>
+            <p className="text-xl text-gray-11 max-w-3xl mx-auto">
               Leading the automation revolution with innovative solutions that transform industries and drive
               technological advancement.
             </p>
@@ -19,9 +19,9 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <Card className="p-8 hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
-                <Target className="h-12 w-12 text-blue-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <Target className="h-12 w-12 text-orange-8 mb-4" />
+                <h3 className="text-2xl font-bold text-gray-12 mb-4">Our Mission</h3>
+                <p className="text-gray-11 leading-relaxed">
                   To revolutionize industrial processes through cutting-edge automation technology, delivering solutions
                   that enhance efficiency, safety, and productivity for our clients worldwide.
                 </p>
@@ -30,9 +30,9 @@ export default function AboutPage() {
 
             <Card className="p-8 hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
-                <Globe className="h-12 w-12 text-blue-600 mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
-                <p className="text-gray-600 leading-relaxed">
+                <Globe className="h-12 w-12 text-orange-8 mb-4" />
+                <h3 className="text-2xl font-bold text-gray-12 mb-4">Our Vision</h3>
+                <p className="text-gray-11 leading-relaxed">
                   To be the global leader in automation systems, setting industry standards and pioneering innovations
                   that shape the future of manufacturing and industrial operations.
                 </p>
@@ -42,7 +42,7 @@ export default function AboutPage() {
 
           {/* Values */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Our Core Values</h2>
+            <h2 className="text-3xl font-bold text-center text-gray-12 mb-12">Our Core Values</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
@@ -65,9 +65,9 @@ export default function AboutPage() {
               ].map((value, index) => (
                 <Card key={index} className="text-center p-6 hover:shadow-lg transition-shadow">
                   <CardContent className="p-0">
-                    <value.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-                    <p className="text-gray-600">{value.description}</p>
+                    <value.icon className="h-12 w-12 text-orange-8 mx-auto mb-4" />
+                    <h3 className="text-xl font-bold text-gray-12 mb-3">{value.title}</h3>
+                    <p className="text-gray-11">{value.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -75,9 +75,9 @@ export default function AboutPage() {
           </div>
 
           {/* Company Story */}
-          <div className="bg-blue-50 rounded-2xl p-8 lg:p-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
-            <div className="prose prose-lg max-w-none text-gray-600">
+          <div className="bg-orange-3 rounded-2xl p-8 lg:p-12">
+            <h2 className="text-3xl font-bold text-gray-12 mb-6">Our Story</h2>
+            <div className="prose prose-lg max-w-none text-gray-11">
               <p className="mb-4">
                 Founded with a vision to transform industrial automation, Continental Automation Systems has grown from
                 a small engineering firm to a global leader in automation solutions. Our journey began with a simple

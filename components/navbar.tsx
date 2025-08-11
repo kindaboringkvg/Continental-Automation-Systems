@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200/20" : "bg-transparent"
+        isScrolled ? "bg-orange-1/95 backdrop-blur-md shadow-lg border-b border-orange-4/20" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,10 +39,10 @@ export default function Navbar() {
             <div className="relative">
               <Settings
                 className={`h-8 w-8 transition-all duration-300 group-hover:rotate-180 ${
-                  isScrolled ? "text-blue-600" : "text-white"
+                  isScrolled ? "text-orange-8" : "text-white"
                 }`}
               />
-              <div className="absolute inset-0 bg-blue-600 rounded-full opacity-20 scale-0 group-hover:scale-110 transition-transform duration-300"></div>
+              <div className="absolute inset-0 bg-orange-8 rounded-full opacity-20 scale-0 group-hover:scale-110 transition-transform duration-300"></div>
             </div>
             <div className="hidden sm:block">
               <span
@@ -71,10 +71,10 @@ export default function Navbar() {
                 className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 group ${
                   pathname === item.href
                     ? isScrolled
-                      ? "text-blue-600 bg-blue-50"
+                      ? "text-orange-8 bg-orange-3"
                       : "text-white bg-white/20"
                     : isScrolled
-                      ? "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                      ? "text-gray-700 hover:text-orange-8 hover:bg-orange-2"
                       : "text-gray-200 hover:text-white hover:bg-white/10"
                 }`}
               >
@@ -95,7 +95,7 @@ export default function Navbar() {
                 variant="ghost"
                 size="icon"
                 className={`lg:hidden transition-colors duration-300 ${
-                  isScrolled ? "text-gray-900 hover:bg-gray-100" : "text-white hover:bg-white/10"
+                  isScrolled ? "text-gray-900 hover:bg-orange-2" : "text-white hover:bg-white/10"
                 }`}
               >
                 <Menu className="h-6 w-6" />
@@ -105,7 +105,7 @@ export default function Navbar() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col space-y-4 mt-8">
                 <div className="flex items-center space-x-3 pb-4 border-b">
-                  <Settings className="h-8 w-8 text-blue-600" />
+                  <Settings className="h-8 w-8 text-orange-8" />
                   <div>
                     <span className="text-xl font-bold text-gray-900">Continental</span>
                     <div className="text-sm font-medium text-gray-600">Automation Systems</div>
@@ -117,8 +117,8 @@ export default function Navbar() {
                     href={item.href}
                     className={`flex items-center px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
                       pathname === item.href
-                        ? "text-blue-600 bg-blue-50 border-l-4 border-blue-600"
-                        : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                        ? "text-orange-8 bg-orange-3 border-l-4 border-orange-8"
+                        : "text-gray-700 hover:text-orange-8 hover:bg-orange-2"
                     }`}
                   >
                     {item.name}

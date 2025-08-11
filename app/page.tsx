@@ -27,7 +27,7 @@ export default function HomePage() {
             <div className="max-w-4xl">
               {/* Company Logo/Icon */}
               <div className="mb-8 animate-fade-in">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-blue-600 rounded-2xl shadow-2xl mb-6">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-orange-8 rounded-2xl shadow-2xl mb-6">
                   <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       strokeLinecap="round"
@@ -49,7 +49,7 @@ export default function HomePage() {
               <div className="mb-8 animate-slide-up">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
                   Continental
-                  <span className="block text-blue-400 text-4xl sm:text-5xl lg:text-6xl mt-2">Automation Systems</span>
+                  <span className="block text-orange-7 text-4xl sm:text-5xl lg:text-6xl mt-2">Automation Systems</span>
                 </h1>
                 <p className="text-xl sm:text-2xl text-gray-300 font-light">Pvt. Ltd.</p>
               </div>
@@ -66,7 +66,7 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-delay">
                 <Button
                   size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 hover:scale-105 group"
+                  className="bg-orange-8 hover:bg-orange-9 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-orange-8/25 transition-all duration-300 hover:scale-105 group"
                 >
                   Explore Our Solutions
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -108,12 +108,12 @@ export default function HomePage() {
       </div>
 
       {/* Weaving Machines Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-orange-1 to-orange-2 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* 3D Visual */}
             <div className="relative order-2 lg:order-1">
-              <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-indigo-200">
+              <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-orange-3 to-orange-4">
                 <Image
                   src="/placeholder.svg?height=500&width=600"
                   alt="Advanced Weaving Machine"
@@ -121,14 +121,14 @@ export default function HomePage() {
                   className="object-cover"
                 />
                 {/* 3D Effect Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 via-transparent to-purple-600/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-orange-8/20 via-transparent to-orange-9/20"></div>
 
                 {/* Floating Elements */}
                 <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg animate-float">
-                  <Cpu className="h-6 w-6 text-blue-600" />
+                  <Cpu className="h-6 w-6 text-orange-8" />
                 </div>
                 <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg animate-float-delay">
-                  <Zap className="h-6 w-6 text-green-600" />
+                  <Zap className="h-6 w-6 text-orange-7" />
                 </div>
                 <div className="absolute top-1/2 right-8 bg-white/90 backdrop-blur-sm rounded-lg p-2 shadow-lg animate-pulse">
                   <div className="text-xs font-semibold text-gray-800">AI Powered</div>
@@ -142,7 +142,7 @@ export default function HomePage() {
 
             {/* Content */}
             <div className="order-1 lg:order-2">
-              <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center px-4 py-2 bg-orange-3 text-orange-9 rounded-full text-sm font-medium mb-6">
                 <Cpu className="h-4 w-4 mr-2" />
                 Advanced Manufacturing
               </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
                   "Seamless integration with existing production lines",
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
-                    <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-6 h-6 bg-orange-8 rounded-full flex items-center justify-center">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path
                           fillRule="evenodd"
@@ -180,7 +180,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl group">
+                <Button size="lg" className="bg-orange-8 hover:bg-orange-9 text-white px-8 py-4 rounded-xl group">
                   Learn More
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -194,7 +194,7 @@ export default function HomePage() {
       </section>
 
       {/* Software Services Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-gray-12 via-orange-12 to-gray-12 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div
@@ -209,14 +209,14 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Content */}
             <div>
-              <div className="inline-flex items-center px-4 py-2 bg-blue-500/20 text-blue-300 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+              <div className="inline-flex items-center px-4 py-2 bg-orange-8/20 text-orange-5 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
                 <Code className="h-4 w-4 mr-2" />
                 Digital Solutions
               </div>
 
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
                 Intelligent
-                <span className="text-blue-400 block">Software Services</span>
+                <span className="text-orange-7 block">Software Services</span>
               </h2>
 
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -236,7 +236,7 @@ export default function HomePage() {
                     className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/20 transition-all duration-300"
                   >
                     <CardContent className="p-4">
-                      <service.icon className="h-8 w-8 text-blue-400 mb-3" />
+                      <service.icon className="h-8 w-8 text-orange-7 mb-3" />
                       <h3 className="text-white font-semibold mb-1">{service.title}</h3>
                       <p className="text-gray-400 text-sm">{service.desc}</p>
                     </CardContent>
@@ -245,7 +245,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl group">
+                <Button size="lg" className="bg-orange-8 hover:bg-orange-9 text-white px-8 py-4 rounded-xl group">
                   Explore Services
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -270,7 +270,7 @@ export default function HomePage() {
                 />
 
                 {/* Code Overlay Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 via-transparent to-purple-600/30"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-8/30 via-transparent to-orange-9/30"></div>
 
                 {/* Floating Code Elements */}
                 <div className="absolute top-8 left-8 bg-slate-800/90 backdrop-blur-sm rounded-lg p-4 shadow-xl animate-float font-mono text-sm">
@@ -286,14 +286,14 @@ export default function HomePage() {
                   </div>
                   <div className="w-24 h-2 bg-gray-700 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-blue-500 to-green-500 rounded-full animate-pulse"
+                      className="h-full bg-gradient-to-r from-orange-7 to-orange-8 rounded-full animate-pulse"
                       style={{ width: "85%" }}
                     ></div>
                   </div>
                 </div>
 
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/10 backdrop-blur-sm rounded-full p-6 shadow-2xl animate-spin-slow">
-                  <Code className="h-12 w-12 text-blue-400" />
+                  <Code className="h-12 w-12 text-orange-7" />
                 </div>
               </div>
 
