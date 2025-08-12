@@ -10,14 +10,19 @@ export default function HomePage() {
       <div className="relative min-h-screen">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <video
-            src="/1.mp4" // your video file path
-            autoPlay
-            loop
-            muted
-            playsInline
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            preload="auto" 
             className="object-cover w-full h-full"
-          ></video>
+          >
+            <source src="/1.mp4" type="video/mp4" />
+            <source src="/1.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+
 
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
@@ -28,19 +33,20 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="text-center max-w-5xl mx-auto">
               {/* Company Logo/Icon */}
-              <div className="mb-4 animate-fade-in">
+              {/* <div className="mb-4 animate-fade-in">
                 <div className="inline-flex items-center justify-center w-75 h-75 rounded-2xl mb-4 overflow-hidden">
                   <Image
                     src="/logo.png" 
+                    width={200}
+                    height={200}
                     alt="Continental Automation Systems Logo" 
-                    priority
                     className="w-full h-full object-contain"
                   />
                 </div>
-              </div>
+              </div> */}
 
               {/* Company Name */}
-              <div className="mb-8 animate-slide-up">
+              <div className="mt-20 mb-8 animate-slide-up">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
                   Continental Automation
                   <span className="block text-orange-7 text-4xl sm:text-5xl lg:text-6xl mt-2">Systems</span>
