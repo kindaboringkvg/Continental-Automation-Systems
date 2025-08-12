@@ -30,9 +30,10 @@ export default function HomePage() {
               {/* Company Logo/Icon */}
               <div className="mb-4 animate-fade-in">
                 <div className="inline-flex items-center justify-center w-75 h-75 rounded-2xl mb-4 overflow-hidden">
-                  <img 
+                  <Image
                     src="/logo.png" 
                     alt="Continental Automation Systems Logo" 
+                    priority
                     className="w-full h-full object-contain"
                   />
                 </div>
