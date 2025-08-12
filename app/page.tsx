@@ -62,8 +62,23 @@ export default function HomePage() {
                 </p>
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 animate-slide-up-delay justify-center">
+              {/* Stats */}
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 animate-fade-in-delay-2 max-w-4xl mx-auto">
+                {[
+                  { number: "500+", label: "Projects Completed" },
+                  { number: "50+", label: "Countries Served" },
+                  { number: "25+", label: "Years Experience" },
+                  { number: "99%", label: "Client Satisfaction" },
+                ].map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.number}</div>
+                    <div className="text-gray-300 text-sm sm:text-base">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+
+               {/* CTA Buttons */}
+              <div className="mt-20 mb-10 flex flex-col sm:flex-row gap-4 animate-slide-up-delay justify-center">
                 <Button
                   size="lg"
                   className="bg-orange-9 hover:bg-orange-9 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-2xl hover:shadow-orange-8/25 transition-all duration-300 hover:scale-105 group"
@@ -79,21 +94,6 @@ export default function HomePage() {
                   <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                   Watch Demo
                 </Button>
-              </div>
-
-              {/* Stats */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16 animate-fade-in-delay-2 max-w-4xl mx-auto">
-                {[
-                  { number: "500+", label: "Projects Completed" },
-                  { number: "50+", label: "Countries Served" },
-                  { number: "25+", label: "Years Experience" },
-                  { number: "99%", label: "Client Satisfaction" },
-                ].map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.number}</div>
-                    <div className="text-gray-300 text-sm sm:text-base">{stat.label}</div>
-                  </div>
-                ))}
               </div>
             </div>
           </div>

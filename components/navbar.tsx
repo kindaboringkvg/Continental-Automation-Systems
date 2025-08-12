@@ -47,20 +47,21 @@ export default function Navbar() {
                 <img 
                   src="/logo.png" 
                   alt="Continental Automation Systems Logo" 
-                  className="w-40 h-40 object-contain transition-transform duration-300 group-hover:scale-110"
+                  className="w-40 h-40 object-contain transition-transform duration-300 group-hover:scale-110 bg-transparent"
                 />
               </div>
+
               <div className="hidden lg:block">
                 <span
                   className={`text-xl font-bold transition-all duration-300 ${
-                    isScrolled ? "text-gray-900" : "text-orange-500"
+                    isScrolled ? "text-gray-900" : "text-orange-7"
                   }`}
                 >
                   Continental Automation Systems
                 </span>
                 <div
                   className={`text-sm font-medium transition-all duration-300 ${
-                    isScrolled ? "text-gray-400" : "text-orange-500"
+                    isScrolled ? "text-gray-400" : "text-orange-7"
                   }`}
                 >
                   Pvt. Ltd.
@@ -81,20 +82,27 @@ export default function Navbar() {
                     ? "text-white bg-orange-900 shadow-lg shadow-orange-900/25"
                     : "text-gray-900 bg-white/90 shadow-lg"
                   : isScrolled
-                    ? "text-gray-700 hover:text-orange-700 hover:bg-orange-50"
-                    : "text-orange-500 hover:text-white hover:bg-white/20"
+                    ? "text-gray-700"
+                    : "text-orange-500"
               }`}
             >
-              <span className="relative z-10">{item.name}</span>
+              {/* Hover background animation */}
               {pathname !== item.href && (
                 <div className="absolute inset-0 bg-orange-900 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 rounded-xl"></div>
               )}
-              {pathname !== item.href && (
-                <span className="absolute inset-0 z-10 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-all duration-300 font-semibold">
-                  {item.name}
-                </span>
-              )}
+
+              {/* Single text element that changes color on hover */}
+              <span
+                className={`relative z-10 transition-colors duration-300 ${
+                  pathname !== item.href
+                    ? "group-hover:text-white"
+                    : ""
+                }`}
+              >
+                {item.name}
+              </span>
             </Link>
+
           ))}
 
           {/* CTA Button */}

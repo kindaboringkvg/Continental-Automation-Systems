@@ -19,6 +19,7 @@ import {
   Shield,
   Zap,
 } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -30,20 +31,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="relative">
-                <Settings className="h-10 w-10 text-orange-7" />
-                <div className="absolute inset-0 bg-blue-400 rounded-full opacity-20 scale-110"></div>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-white">Continental</h3>
-                <p className="text-sm text-gray-9">Automation Systems</p>
-              </div>
+            <div className="flex justify-start items-center mb-6">
+              <Image 
+                src="/logo.png" 
+                width={160}
+                height={160}
+                alt="Continental Automation Systems Logo" 
+                className="object-contain"
+              />
             </div>
 
-            <p className="text-gray-8 mb-6 leading-relaxed">
-              Leading the automation revolution with innovative solutions that transform industries and drive
-              technological advancement worldwide.
+            <p className="text-gray-8 mb-6 leading-relaxed text-justify">
+              We are a professionally managed organization with a solid track record in Woven Taxtiles Design Systems Worldwide. We are easy weave Label Weaving Machine Vendor and CAD/CAM Software service Provider.
             </p>
 
             {/* Certifications */}
@@ -164,16 +163,16 @@ export default function Footer() {
             {/* Newsletter Signup */}
             <div className="bg-gray-11 p-4 rounded-lg">
               <h4 className="text-sm font-semibold mb-3">Stay Updated</h4>
-              <p className="text-xs text-gray-9 mb-4">
+              <p className="text-xs text-gray-2 mb-4">
                 Subscribe to our newsletter for the latest automation insights and product updates.
               </p>
               <div className="flex space-x-2">
                 <Input
                   type="email"
                   placeholder="Enter your email"
-                  className="bg-gray-10 border-gray-9 text-white placeholder-gray-400 text-sm"
+                  className="bg-white border-gray-300 text-gray-900 placeholder-gray-500 text-sm"
                 />
-                <Button size="sm" className="bg-orange-8 hover:bg-orange-9 px-3">
+                <Button size="sm" className="bg-orange-500 hover:bg-orange-600 px-3">
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </div>

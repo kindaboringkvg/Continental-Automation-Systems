@@ -386,6 +386,17 @@
   background-clip: text;
 }
 
+
+/* styles/globals.css */
+.justify-text {
+  text-align: justify;
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+
 /* Enhanced card hover effects */
 .card-3d {
   transform-style: preserve-3d;
