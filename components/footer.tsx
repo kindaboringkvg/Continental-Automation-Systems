@@ -190,16 +190,13 @@ export default function Footer() {
               <span className="text-sm text-gray-9">Follow Us:</span>
               <div className="flex space-x-4">
                 {[
-                  { icon: Facebook, href: "#", label: "Facebook" },
-                  { icon: Twitter, href: "#", label: "Twitter" },
                   { icon: Linkedin, href: "#", label: "LinkedIn" },
                   { icon: Youtube, href: "#", label: "YouTube" },
-                  { icon: Instagram, href: "#", label: "Instagram" },
                 ].map((social) => (
                   <Link
                     key={social.label}
                     href={social.href}
-                    className="text-gray-9 hover:text-orange-7 transition-colors duration-200 p-2 hover:bg-gray-11 rounded-full"
+                    className="text-gray-9 hover:text-orange-7 transition-colors duration-200 p-2 hover:bg-orange-500 rounded-full"
                     aria-label={social.label}
                   >
                     <social.icon className="h-5 w-5" />
@@ -238,7 +235,7 @@ export default function Footer() {
 
             {/* Legal Links */}
             <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
-              {["Privacy Policy", "Terms of Service", "Cookie Policy", "Sitemap", "Accessibility"].map((link) => (
+              {["Privacy Policy", "Terms of Service", "Cookie Policy"].map((link) => (
                 <Link
                   key={link}
                   href={`/${link.toLowerCase().replace(/\s+/g, "-")}`}

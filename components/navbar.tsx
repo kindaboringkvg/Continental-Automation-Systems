@@ -123,7 +123,7 @@ export default function Navbar() {
                   className={`p-2 rounded-xl transition-all duration-300 ${
                     isScrolled 
                       ? "text-gray-900 hover:bg-orange-100" 
-                      : "text-orange-500 hover:bg-white/20"
+                      : "text-orange-300 hover:bg-white/20"
                   }`}
                 >
                   <Menu className="h-6 w-6" />

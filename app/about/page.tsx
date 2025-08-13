@@ -15,6 +15,25 @@ export default function AboutPage() {
             </p>
           </div>
 
+          {/* Company Story */}
+          <div className="mb-15 bg-orange-3 rounded-2xl p-8 lg:p-12">
+            <h2 className="text-3xl font-bold text-gray-12 mb-6">Our Story</h2>
+            <div className="prose prose-lg max-w-none text-gray-11 text-justify">
+              <p className="mb-4">
+                CONTINENTAL AUTOMATION SYSTEMS PVT. LTD. ( CASL ) was founded in April 1997. It is an ISO 9001 certified company since 1999 and is promoted and <strong>managed by experienced professionals from India’s premier technical educational institutes like IITs</strong>. The CASL is a leading CAD/CAM software solutions provider for woven textile industries.
+              </p>
+              <p className="mb-4">
+                CASL has developed a truly revolutionary Woven textiles designing system, <strong>Continental’s TexDesigner CAD/CAM</strong> for a range of fabrics like Home Furnishings, Woven Labels, Carpets, Decorative Beddings, Curtains, Dress Materials and Woven Wall Coverings. The software is compatible with both electronic as well as mechanical jacquards (through Card punching machines). We have developed Windows OS based multitasking software which includes the most powerful CAD/CAM-tools. The designing, weaving and presentation modules make new design creating and viewing very simple and enhance the creativity of designers tremendously. The software is very cost-effective, technologically superior, dependable, accurate, compatible, easy to operate and all this is backed by a service which makes it virtually trouble-free.
+              </p>
+              <p className="mb-4">
+                CASL is a 100% Export Oriented Unit (EOU) under the Software Technology Parks (STP) scheme, an autonomous society under the Ministry of Information Technology, Government of India. CASL has been a registered member of the Electronics & Computer Software Export Promotion Council (ESC) under the Ministry of Commerce, Government of India. <strong>CASL has been awarded “International Gold Star Award for Quality 2000 on account of corporate achievement in quality & innovation in technology” by Business Initiative Directions, Spain</strong> and <strong>has been selected for the 29th “International Trophy for Quality-New Millennium Award” by the “Trade Leaders Club”</strong> for being a distinguished firm whose product have deserved a universal acclaim throughout the year.
+              </p>
+              <p className="mb-4">
+                A dedicated team of experienced software professionals, textile technologists & designers at CASL, constantly upgrade the system to keep ahead of the changing industry standards and trend forecasts. Also, CASL has a strong marketing team, to cover all over the world textile industries. We are a leader in India and also have a good marketing hold in other Asian & European countries.
+              </p>
+            </div>
+          </div>
+
           {/* Mission & Vision */}
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <Card className="p-8 hover:shadow-lg transition-shadow">
@@ -71,27 +90,6 @@ export default function AboutPage() {
                   </CardContent>
                 </Card>
               ))}
-            </div>
-          </div>
-
-          {/* Company Story */}
-          <div className="bg-orange-3 rounded-2xl p-8 lg:p-12">
-            <h2 className="text-3xl font-bold text-gray-12 mb-6">Our Story</h2>
-            <div className="prose prose-lg max-w-none text-gray-11">
-              <p className="mb-4">
-                Founded with a vision to transform industrial automation, Continental Automation Systems has grown from
-                a small engineering firm to a global leader in automation solutions. Our journey began with a simple
-                belief: that technology should make industrial processes more efficient, safer, and more sustainable.
-              </p>
-              <p className="mb-4">
-                Over the years, we have developed expertise across multiple industries, from manufacturing and
-                automotive to pharmaceuticals and energy. Our team of skilled engineers and technicians work tirelessly
-                to create solutions that not only meet today's challenges but anticipate tomorrow's needs.
-              </p>
-              <p>
-                Today, we continue to push the boundaries of what's possible in automation, leveraging emerging
-                technologies like AI, IoT, and advanced robotics to create smarter, more connected industrial systems.
-              </p>
             </div>
           </div>
         </div>

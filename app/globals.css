@@ -407,6 +407,151 @@
   transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
 }
 
+/* Enhanced floating animations for MacBook */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(-6px) rotate(-1deg);
+  }
+}
+
+@keyframes float-delay {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-15px) rotate(-1deg);
+  }
+  66% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 30px rgba(86, 32, 5, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(86, 32, 5, 0.5);
+  }
+}
+
+@keyframes macbook-glow {
+  0%,
+  100% {
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float-delay 5s ease-in-out infinite 2.5s;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-macbook-glow {
+  animation: macbook-glow 4s ease-in-out infinite;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #562005, #6b331a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Enhanced card hover effects */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: rotateY(5deg) rotateX(5deg) translateZ(20px);
+}
+
+/* MacBook specific styles */
+.macbook-screen {
+  background: linear-gradient(145deg, #000000, #1a1a1a);
+  border: 3px solid #2a2a2a;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.macbook-bezel {
+  background: linear-gradient(145deg, #e8e8e8, #f5f5f5);
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.macbook-base {
+  background: linear-gradient(145deg, #e8e8e8, #f5f5f5);
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.macbook-trackpad {
+  background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Bubble connection lines */
+.bubble-connection::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(86, 32, 5, 0.4), transparent);
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Enhanced bubble styles */
+.feature-bubble {
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-bubble:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -428,6 +573,49 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gray-8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .floating-bubble {
+    display: none;
+  }
+}
+
+/* Interactive elements */
+.interactive-demo:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* macOS window controls */
+.macos-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.macos-control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.macos-control:hover {
+  transform: scale(1.1);
+}
+
+.macos-control.red {
+  background: linear-gradient(135deg, #ff5f57, #ff3b30);
+}
+
+.macos-control.yellow {
+  background: linear-gradient(135deg, #ffbd2e, #ff9500);
+}
+
+.macos-control.green {
+  background: linear-gradient(135deg, #28ca42, #30d158);
 }
 
 /* Utility classes for new color scales */
