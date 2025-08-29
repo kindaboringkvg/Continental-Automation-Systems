@@ -128,9 +128,9 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-orange-7 mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-gray-8">
-                  <p>123 Industrial Avenue</p>
-                  <p>Tech Park, Suite 456</p>
-                  <p>Mumbai, Maharashtra 400001</p>
+                  <p>F55 Industrial Area</p>
+                  <p>Chopanki, Bhiwadi</p>
+                  <p>Rajasthan 301019</p>
                   <p>India</p>
                 </div>
               </div>
@@ -138,24 +138,14 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-orange-7 flex-shrink-0" />
                 <div className="text-sm text-gray-8">
-                  <p>+91 22 1234 5678</p>
-                  <p>+91 22 8765 4321</p>
+                  <p>+91 83769 42945</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-orange-7 flex-shrink-0" />
                 <div className="text-sm text-gray-8">
-                  <p>info@continentalautomation.com</p>
-                  <p>sales@continentalautomation.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-3">
-                <Clock className="h-5 w-5 text-orange-7 flex-shrink-0" />
-                <div className="text-sm text-gray-8">
-                  <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
-                  <p>Sat: 9:00 AM - 2:00 PM</p>
+                  <p>info@continentalsystems.in</p>
                 </div>
               </div>
             </div>
