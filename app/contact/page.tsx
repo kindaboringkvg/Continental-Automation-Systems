@@ -72,11 +72,11 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-12 mb-2">Our Location</h3>
                       <p className="text-gray-10">
-                        123 Industrial Avenue
+                        F55 Industrial Area
                         <br />
-                        Tech Park, Suite 456
+                        Chopanki, Bhiwadi
                         <br />
-                        Mumbai, Maharashtra 400001
+                        Rajasthan 301019
                         <br />
                         India
                       </p>
@@ -92,9 +92,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-12 mb-2">Phone</h3>
                       <p className="text-gray-10">
-                        +91 22 1234 5678
-                        <br />
-                        +91 22 8765 4321
+                        +91 83769 42945
                       </p>
                     </div>
                   </div>
@@ -108,16 +106,14 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-gray-12 mb-2">Email</h3>
                       <p className="text-gray-10">
-                        info@continentalautomation.com
-                        <br />
-                        sales@continentalautomation.com
+                        info@continentalsystems.in
                       </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="p-6">
+              {/* <Card className="p-6">
                 <CardContent className="p-0">
                   <div className="flex items-start space-x-4">
                     <Clock className="h-6 w-6 text-orange-8 mt-1" />
@@ -133,7 +129,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>
